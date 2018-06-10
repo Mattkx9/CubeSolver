@@ -11,7 +11,9 @@ public class CubeSolver {
         System.out.println("[System] Starting CubeSolver...");
 
         Cube cube = new Cube();
-        cube.rotate(Rotation.genScramble(20));
+        System.out.println();
+        System.out.println(Rotation.parseScramble(Rotation.scramble));
+        cube.rotate(Rotation.scramble);
         cube.print();
     }
 }
